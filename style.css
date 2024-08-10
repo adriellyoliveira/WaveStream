@@ -252,15 +252,21 @@ p {
 }
 
 .bm {
-    border-bottom: solid 2px #ff7c01;
+    border-bottom: solid 2px #ff0178;
     font-size: 32px;
-    color: #ff7c01;
+    color: #ff0178;
 }
 
 .chamada-bm {
-    background: #744428;
+    background: #742870;
     padding-top:40px ;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
+}
+
+.chamada-bm img {
+    height: 315px;
+    width: 560px;
+    border-radius: 10px;
 }
