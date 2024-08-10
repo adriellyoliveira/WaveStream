@@ -179,7 +179,7 @@ p {
 
 /*DREAMCATHER COMEÇO*/
 
-.nav-logo img {
+.nav-logo-dc img {
     height: 250px;
     display: flex;
 }
@@ -209,7 +209,7 @@ p {
 
 /*ENHYPEN COMEÇO*/
 
-.nav-logo img {
+.nav-logo-en img {
     height: 250px;
     display: flex;
 }
@@ -239,7 +239,7 @@ p {
 
 /*BABYMONSTER COMEÇO*/
 
-.nav-logo img {
+.nav-logo-bm img {
     height: 250px;
     display: flex;
 }
@@ -258,7 +258,7 @@ p {
 }
 
 .chamada-bm {
-    background: #742870;
+    background: #74284b;
     padding-top:40px ;
     padding-bottom: 40px;
     display: flex;
