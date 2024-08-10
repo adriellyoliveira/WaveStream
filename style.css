@@ -174,3 +174,93 @@ p {
     text-align: center;
     padding-top: 20px;
 }
+
+/*&TEAM FIM*/
+
+/*DREAMCATHER COMEÇO*/
+
+.nav-logo img {
+    height: 250px;
+    display: flex;
+}
+
+.nav-links-dc {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.dc {
+    border-bottom: solid 2px #4501ff;
+    font-size: 32px;
+    color: #4501ff;
+}
+
+.chamada-dc {
+    background: #382874;
+    padding-top:40px ;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/*DREAMCATHER FIM*/
+
+/*ENHYPEN COMEÇO*/
+
+.nav-logo img {
+    height: 250px;
+    display: flex;
+}
+
+.nav-links-en {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.en {
+    border-bottom: solid 2px #ff7c01;
+    font-size: 32px;
+    color: #ff7c01;
+}
+
+.chamada-en {
+    background: #744428;
+    padding-top:40px ;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/*ENHYPEN FIM*/
+
+/*BABYMONSTER COMEÇO*/
+
+.nav-logo img {
+    height: 250px;
+    display: flex;
+}
+
+.nav-links-bm {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bm {
+    border-bottom: solid 2px #ff7c01;
+    font-size: 32px;
+    color: #ff7c01;
+}
+
+.chamada-bm {
+    background: #744428;
+    padding-top:40px ;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
