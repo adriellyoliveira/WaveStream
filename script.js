@@ -25,3 +25,15 @@ nextButton.addEventListener('click', () => {
     }
     updateCarousel();
 });
+
+// Função para detectar se o dispositivo é móvel
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+// Ocultar botões em dispositivos móveis
+if (isMobile()) {
+    prevButton.style.display = 'none';
+    nextButton.style.display = 'none';
+}
+

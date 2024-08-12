@@ -68,7 +68,7 @@ iframe {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .carousel-track-container {
@@ -90,11 +90,6 @@ iframe {
 .carousel-item img {
     width: 100%;
     border-radius: 8px;
-    transition: all .40s;
-}
-
-.carousel-item img:hover {
-    transform: scale(0.9);
 }
 
 button {
@@ -116,6 +111,23 @@ button.prev {
 button.next {
     right: 0;
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-track {
+        display: inline-flex;
+    }
+
+    button.prev, button.next {
+        display: none;
+    }
+}
+
 
 
 .chamada {
