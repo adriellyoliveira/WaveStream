@@ -68,7 +68,7 @@ iframe {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .carousel-track-container {
@@ -90,6 +90,11 @@ iframe {
 .carousel-item img {
     width: 100%;
     border-radius: 8px;
+    transition: all .40s;
+}
+
+.carousel-item img:hover {
+    transform: scale(0.9);
 }
 
 button {
@@ -111,111 +116,6 @@ button.prev {
 button.next {
     right: 0;
 }
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    .carousel {
-        overflow-x: auto;
-        scroll-behavior: smooth;
-    }
-
-    .carousel-track {
-        display: inline-flex;
-    }
-
-    button.prev, button.next {
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        display: none; /* Esconde o menu */
-    }
-
-    .nav-links.active {
-        display: flex; /* Exibe o menu quando ativo */
-    }
-
-    .nav-logo img {
-        height: 150px; /* Reduz o tamanho do logo */
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-/* Desktop */
-@media screen and (min-width: 769px) {
-    .burger {
-        display: none;
-    }
-}
-
-
-/* Carousel Responsivo */
-.carousel-track-container {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.carousel-item {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    width: 70%; /* Ajusta a largura para dispositivos móveis */
-}
-
-@media screen and (min-width: 768px) {
-    .carousel-item {
-        width: 150px; /* Largura padrão para desktops */
-    }
-}
-
-
-iframe, img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Ajuste de Layout */
-@media screen and (max-width: 768px) {
-    .categoria-videos {
-        flex-direction: column;
-    }
-
-    .chamada {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .chamada-texto {
-        margin-right: 0;
-    }
-}
-
 
 
 .chamada {

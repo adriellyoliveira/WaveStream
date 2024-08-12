@@ -62,9 +62,3 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCarouselPosition();
     });
 });
-
-
-document.querySelector('.burger').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('active');
-});
-
