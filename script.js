@@ -37,3 +37,34 @@ if (isMobile()) {
     nextButton.style.display = 'none';
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const items = Array.from(track.children);
+    const itemWidth = items[0].getBoundingClientRect().width;
+    
+    let currentIndex = 0;
+
+    function updateCarouselPosition() {
+        const offset = -(currentIndex * (itemWidth + 20)); // 20px é a margem entre os itens
+        track.style.transform = `translateX(${offset}px)`;
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateCarouselPosition();
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = Math.min(currentIndex + 1, items.length - 1);
+        updateCarouselPosition();
+    });
+});
+
+
+document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
